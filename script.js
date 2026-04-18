@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  const text = "Hey, I'm Lati";
+  const text = 'greeting: "Hey, I\'m Lati"';
   const typedText = document.querySelector('.typed-text');
   let index = 0;
 
@@ -24,9 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (index < text.length) {
       typedText.textContent += text.charAt(index);
       index++;
-      setTimeout(type, 100);
+      setTimeout(type, 80);
     }
   }
 
-  type();
+  setTimeout(type, 500);
 });
