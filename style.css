@@ -224,6 +224,33 @@ section {
   max-width: 500px;
 }
 
+.typewriter {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  min-height: 1.2em;
+}
+
+.typed-text {
+  color: var(--text);
+}
+
+.cursor {
+  display: inline-block;
+  color: var(--text);
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.intro-subtitle {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-secondary);
+}
+
 .hero {
   min-height: 100vh;
   display: flex;
