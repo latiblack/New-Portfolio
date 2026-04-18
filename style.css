@@ -276,6 +276,29 @@ section {
   color: var(--text-tertiary);
 }
 
+.hero-walgo {
+  margin-top: 1.5rem;
+  font-size: 0.8125rem;
+  color: var(--text-tertiary);
+}
+
+.hero-walgo a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--text-secondary);
+  transition: color 0.2s var(--ease);
+}
+
+.hero-walgo a:hover {
+  color: var(--text);
+}
+
+.walgo-logo {
+  height: 16px;
+  width: auto;
+}
+
 .hero-visual {
   flex: 0.8;
   display: flex;
@@ -554,6 +577,15 @@ section {
 
 .footer-note {
   font-size: 0.8125rem;
+}
+
+.footer-note a {
+  color: var(--text-secondary);
+  transition: color 0.2s var(--ease);
+}
+
+.footer-note a:hover {
+  color: var(--text);
 }
 
 @media (max-width: 900px) {
