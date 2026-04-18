@@ -253,14 +253,28 @@ section {
 
 .hero {
   min-height: 100vh;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
   align-items: center;
-  gap: 4rem;
-  padding-top: 64px;
+  gap: 3rem;
+  padding: 8rem 1.5rem 4rem;
+}
+
+.hero-pfp {
+  display: flex;
+  align-items: flex-start;
+}
+
+.hero-pfp .pfp-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border);
 }
 
 .hero-content {
-  flex: 1.2;
+  flex: 1;
 }
 
 .pill {
@@ -485,7 +499,7 @@ section {
 
 .project-card {
   display: grid;
-  grid-template-columns: 1fr 140px;
+  grid-template-columns: 100px 1fr;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
@@ -498,8 +512,28 @@ section {
   transform: translateY(-2px);
 }
 
+.project-screenshot {
+  width: 100px;
+  height: 100%;
+  min-height: 120px;
+  background: var(--bg-elevated);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.project-favicon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
 .project-content {
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .tag {
