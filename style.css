@@ -176,6 +176,54 @@ section {
   border-radius: 2px;
 }
 
+.intro {
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 1.5rem 4rem;
+  background: var(--bg);
+}
+
+.intro-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 900px;
+  width: 100%;
+}
+
+.intro-pfp {
+  flex-shrink: 0;
+}
+
+.pfp-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border);
+}
+
+.intro-text {
+  flex: 1;
+}
+
+.intro-text h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 0.75rem;
+}
+
+.intro-name {
+  color: var(--text);
+}
+
+.intro-text p {
+  font-size: 1.125rem;
+  margin-bottom: 1.5rem;
+  max-width: 500px;
+}
+
 .hero {
   min-height: 100vh;
   display: flex;
