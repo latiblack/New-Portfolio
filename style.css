@@ -253,28 +253,14 @@ section {
 
 .hero {
   min-height: 100vh;
-  display: grid;
-  grid-template-columns: auto 1fr 1fr;
-  align-items: center;
-  gap: 3rem;
-  padding: 8rem 1.5rem 4rem;
-}
-
-.hero-pfp {
   display: flex;
-  align-items: flex-start;
-}
-
-.hero-pfp .pfp-img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid var(--border);
+  align-items: center;
+  gap: 4rem;
+  padding-top: 64px;
 }
 
 .hero-content {
-  flex: 1;
+  flex: 1.2;
 }
 
 .pill {
