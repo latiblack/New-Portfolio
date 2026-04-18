@@ -7,13 +7,11 @@
   <meta name="description" content="Portfolio of Lati-Explorer - Vibe Coder/Emerging Dev building with AI Tools">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="bg-pattern"></div>
-  <div class="gradient-orb orb-1"></div>
-  <div class="gradient-orb orb-2"></div>
+  <div class="noise"></div>
   
   <header class="header">
     <nav class="nav container">
@@ -35,13 +33,13 @@
   <main>
     <section class="hero container">
       <div class="hero-content">
-        <span class="hero-badge"> emerging dev </span>
-        <h1>Building in <span class="gradient-text">Web3</span><br>with AIsuperpowers</h1>
+        <span class="pill">emerging dev</span>
+        <h1>Building in <span class="accent">Web3</span><br>with AI superpowers</h1>
         <p class="hero-subtitle">I create products that solve real problems. Currently building tools for the decentralized ecosystem and exploring the intersection of AI and blockchain.</p>
         <div class="hero-cta">
           <a href="#projects" class="btn btn-primary">
             <span>View Projects</span>
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
           <a href="#contact" class="btn btn-secondary">Get In Touch</a>
         </div>
@@ -61,45 +59,46 @@
         </div>
       </div>
       <div class="hero-visual">
-        <div class="code-block">
-          <div class="code-header">
-            <span class="code-dot red"></span>
-            <span class="code-dot yellow"></span>
-            <span class="code-dot green"></span>
+        <div class="code-window">
+          <div class="window-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="filename">builder.js</span>
           </div>
-          <pre><code><span class="code-keyword">const</span> <span class="code-var">builder</span> = {
-  name: <span class="code-string">"Lati"</span>,
-  stack: [<span class="code-string">"AI"</span>, <span class="code-string">"Solidity"</span>, <span class="code-string">"Next.js"</span>],
-  building: <span class="code-keyword">true</span>
+          <pre><code><span class="kwd">const</span> <span class="var">builder</span> = {
+  name: <span class="str">"Lati"</span>,
+  stack: [<span class="str">"AI"</span>, <span class="str">"Solidity"</span>, <span class="str">"Next.js"</span>],
+  building: <span class="kwd">true</span>
 };
 
-<span class="code-comment">// Creating the future 🚀</span></code></pre>
+<span class="com">// Creating the future</span></code></pre>
         </div>
       </div>
     </section>
 
     <section id="skills" class="section skills-section">
       <div class="container">
-        <span class="section-tag">Skills</span>
+        <span class="label">Skills</span>
         <h2>Technologies I Work With</h2>
         <div class="skills-grid">
           <div class="skill-card">
-            <div class="skill-icon">🤖</div>
+            <span class="skill-icon">🤖</span>
             <h3>AI Integration</h3>
             <p>Building with AI APIs, automating workflows, and leveraging LLMs for smart solutions</p>
           </div>
           <div class="skill-card">
-            <div class="skill-icon">⛓️</div>
+            <span class="skill-icon">⛓️</span>
             <h3>Web3</h3>
             <p>Smart contracts, DeFi protocols, and decentralized applications</p>
           </div>
           <div class="skill-card">
-            <div class="skill-icon">⚛️</div>
+            <span class="skill-icon">⚛️</span>
             <h3>Frontend</h3>
             <p>React, Next.js, modern UI libraries, and responsive design</p>
           </div>
           <div class="skill-card">
-            <div class="skill-icon">🔧</div>
+            <span class="skill-icon">🔧</span>
             <h3>Tools</h3>
             <p>Cursor, v0, Lovable, Claude, and other AI-powered dev tools</p>
           </div>
@@ -109,69 +108,57 @@
 
     <section id="projects" class="section projects-section">
       <div class="container">
-        <span class="section-tag">Projects</span>
+        <span class="label">Projects</span>
         <h2>Featured Work</h2>
         <p class="section-desc">Products I've built for the Web3 ecosystem and beyond</p>
         
         <div class="projects-grid">
           <article class="project-card">
             <div class="project-content">
-              <div class="project-tag">Web3</div>
+              <span class="tag">Web3</span>
               <h3>Seedback</h3>
               <p>A Product Hunt for Web3 projects. Solo builders and small teams get visibility while early users earn $ETH for interacting with projects.</p>
-              <div class="project-links">
-                <a href="https://seedback.fun" target="_blank" class="project-link">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
-                  Visit
-                </a>
-              </div>
+              <a href="https://seedback.fun" target="_blank" class="project-link">
+                Visit →
+              </a>
             </div>
-            <div class="project-visual project-1"></div>
+            <div class="project-visual"></div>
           </article>
 
           <article class="project-card">
             <div class="project-content">
-              <div class="project-tag">Utility</div>
+              <span class="tag">Utility</span>
               <h3>Electricity Token Manager</h3>
               <p>A tool to manage electricity tokens for prepaid meters in Nigerian homes. Track usage and never run out of power unexpectedly.</p>
-              <div class="project-links">
-                <a href="https://electricity-manager.lovable.app/" target="_blank" class="project-link">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
-                  Visit
-                </a>
-              </div>
+              <a href="https://electricity-manager.lovable.app/" target="_blank" class="project-link">
+                Visit →
+              </a>
             </div>
-            <div class="project-visual project-2"></div>
+            <div class="project-visual"></div>
           </article>
 
           <article class="project-card">
             <div class="project-content">
-              <div class="project-tag">AI + Security</div>
+              <span class="tag">AI + Security</span>
               <h3>Genlayer Contract Scorer</h3>
               <p>Audit and check the quality of your Genlayer smart contracts before deploying. Catch vulnerabilities with AI-powered analysis.</p>
-              <div class="project-links">
-                <a href="https://genlayer-contract-scorer.vercel.app" target="_blank" class="project-link">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
-                  Visit
-                </a>
-              </div>
+              <a href="https://genlayer-contract-scorer.vercel.app" target="_blank" class="project-link">
+                Visit →
+              </a>
             </div>
-            <div class="project-visual project-3"></div>
+            <div class="project-visual"></div>
           </article>
 
           <article class="project-card">
             <div class="project-content">
-              <div class="project-tag">Trading</div>
+              <span class="tag">Trading</span>
               <h3>Alpha Scanner</h3>
               <p>A trading terminal to spot top-performing pairs on higher timeframes. Make better picks in spot and futures trading.</p>
-              <div class="project-links">
-                <a href="https://lati-alpha-scanner.vercel.app/" target="_blank" class="project-link">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
-                  Visit
-                </a>
-              </div>
+              <a href="https://lati-alpha-scanner.vercel.app/" target="_blank" class="project-link">
+                Visit →
+              </a>
             </div>
-            <div class="project-visual project-4"></div>
+            <div class="project-visual"></div>
           </article>
         </div>
       </div>
@@ -181,26 +168,30 @@
       <div class="container">
         <div class="about-grid">
           <div class="about-content">
-            <span class="section-tag">About</span>
+            <span class="label">About</span>
             <h2>Building the Future with AI</h2>
             <p>I'm an emerging developer who believes in the power of AI to transform how we build. Every product I've created leverages AI in some way - whether as a development co-pilot, integration, or the core product itself.</p>
             <p>My journey started with curiosity about Web3 and DeFi, and now I build tools that help others navigate this space. I focus on practical solutions that create real value.</p>
             <a href="#contact" class="btn btn-primary">Let's Connect</a>
           </div>
           <div class="about-visual">
-            <div class="achievement-cards">
-              <div class="achievement-card">
-                <span class="achievement-icon">🎯</span>
+            <div class="achievement">
+              <span class="achievement-icon">🎯</span>
+              <div>
                 <h4>4+ Live Products</h4>
                 <p>Deployed and serving real users</p>
               </div>
-              <div class="achievement-card">
-                <span class="achievement-icon">🌍</span>
+            </div>
+            <div class="achievement">
+              <span class="achievement-icon">🌍</span>
+              <div>
                 <h4>Global Reach</h4>
                 <p>Users from 50+ countries</p>
               </div>
-              <div class="achievement-card">
-                <span class="achievement-icon">🚀</span>
+            </div>
+            <div class="achievement">
+              <span class="achievement-icon">🚀</span>
+              <div>
                 <h4>Fast Builder</h4>
                 <p>Shipped in weeks, not months</p>
               </div>
@@ -213,10 +204,10 @@
     <section id="contact" class="section contact-section">
       <div class="container">
         <div class="contact-card">
-          <div class="contact-content">
-            <span class="section-tag">Contact</span>
+          <div class="contact-main">
+            <span class="label">Contact</span>
             <h2>Let's Build Something Together</h2>
-            <p>Whether you have a project idea, want to collaborate, or just want to chat about Web3 and AI,I'm always open to new conversations.</p>
+            <p>Whether you have a project idea, want to collaborate, or just want to chat about Web3 and AI, I'm always open to new conversations.</p>
             <div class="social-links">
               <a href="#" class="social-link" aria-label="Twitter">
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
@@ -229,9 +220,6 @@
               </a>
             </div>
           </div>
-          <div class="contact-visual">
-            <div class="contact-glow"></div>
-          </div>
         </div>
       </div>
     </section>
@@ -239,8 +227,8 @@
 
   <footer class="footer">
     <div class="container footer-content">
-      <p>&copy; <span id="year"></span> <span class="footer-name">Lati-Explorer</span>. All rights reserved.</p>
-      <p class="footer-built">Built with AI, shipped with love 🚀</p>
+      <p>© <span id="year"></span> Lati-Explorer. All rights reserved.</p>
+      <p class="footer-note">Built with AI, shipped with love</p>
     </div>
   </footer>
 
