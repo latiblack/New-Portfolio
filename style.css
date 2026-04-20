@@ -557,10 +557,6 @@ section {
   gap: 0.625rem;
 }
 
-.project-visual {
-  background: linear-gradient(135deg, #1a1a1a 0%, #222 100%);
-}
-
 .about-section {
   background: var(--bg-elevated);
 }
@@ -760,11 +756,11 @@ section {
   }
   
   .project-card {
-    grid-template-columns: 1fr;
+    grid-template-columns: 80px 1fr;
   }
-  
-  .project-visual {
-    height: 80px;
+
+  .project-screenshot {
+    min-height: 80px;
   }
   
   .hero-stats {
